@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Convert</title>
+		<link rel="stylesheet" href="/styles/style.css" />
+	</head>
+	<body>
+		<div class="app">
+			<main class="main">
+				<section class="setting">
+					<h1 class="setting__title">
+						Тебе снова нужно что-то сконвертировать
+					</h1>
+					<div class="setting__steps">
+						<div class="step">
+							<p class="step__description">1) Давай сюда Exel файл.</p>
+							<input id="inputFile" type="file" />
+						</div>
+						<div class="step">
+							<p class="step__description">Ответ</p>
+							<textarea
+								name=""
+								id="textareaJson"
+								cols="30"
+								rows="10"
+							></textarea>
+						</div>
+						<div class="step">
+							<p class="step__description">2) Что мы с ним сделаем?</p>
+							<div>
+								<input type="radio" id="0" name="action" />
+								<label for="0">Сетка товаров для Хита</label>
+							</div>
+							<div>
+								<input type="radio" id="1" name="action" />
+								<label for="1">Сетка товаров для Грошыка(Увага Танна)</label>
+							</div>
+							<div>
+								<input type="radio" id="2" name="action" />
+								<label for="2">Сортировка вакантных площадок(Евроопт)</label>
+							</div>
+						</div>
+						<div class="step">
+							<p class="step__description">Пользовательские настройки</p>
+							<textarea
+								name=""
+								id="textareaSettings"
+								cols="30"
+								rows="5"
+							></textarea>
+						</div>
+						<div class="step">
+							<label class="step__description"
+								>3)Ну перекрестись и жми кнопку!</label
+							>
+							<button id="successBtn">Сконвертировать</button>
+						</div>
+						<textarea
+							name=""
+							id="textareaAnswer"
+							cols="30"
+							rows="10"
+						></textarea>
+					</div>
+				</section>
+			</main>
+		</div>
+	</body>
+	<script src="https://unpkg.com/xlsx/dist/xlsx.full.min.js"></script>
+	<script type="module" src="./js/main.js"></script>
+</html>

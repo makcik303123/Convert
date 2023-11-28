@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: rgb(98, 193, 161);
+  width: 100%;
+  height: 100%;
+}
+
+.app {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  padding: 20px;
+}
+
+.setting {
+  display: flex;
+  flex-direction: column;
+}
+.setting .setting__title {
+  font-size: 28px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.setting .setting__steps {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.setting .setting__steps .step {
+  display: flex;
+  flex-direction: column;
+}
+.setting .setting__steps .step .step__description {
+  margin-bottom: 15px;
+}/*# sourceMappingURL=style.css.map */
