@@ -1,7 +1,8 @@
 import { convertFile } from "./convert.js";
 import { settings } from "./variables.js";
-import { createHitHTML } from "./createHitHTML.js";
-import { createYvagaHTML } from "./createYvagaHTML.js";
+import { createHitHTML } from "./actions/createHitHTML.js";
+import { createYvagaHTML } from "./actions/createYvagaHTML.js";
+import { sortBy } from "./actions/sortBy.js";
 
 const inputFile = document.getElementById("inputFile");
 const textareaJson = document.getElementById("textareaJson");
@@ -31,6 +32,10 @@ const returnAnswer = () => {
 			);
 			break;
 		case 2:
+			dataJson = sortBy(
+				JSON.parse(textareaJson.textContent),
+				JSON.parse(textareaSettings.textContent)
+			);
 			break;
 
 		default:
