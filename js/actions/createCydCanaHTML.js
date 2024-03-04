@@ -1,4 +1,4 @@
-const createHitHTML = (arrProducts, fields) => {
+const createCydCanaHTML = (arrProducts, fields) => {
 	console.log(arrProducts);
 	console.log(fields);
 	let result = "";
@@ -43,4 +43,4 @@ const createHitHTML = (arrProducts, fields) => {
 	return result;
 };
 
-export { createHitHTML };
+export { createCydCanaHTML };
