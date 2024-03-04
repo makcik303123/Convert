@@ -2,6 +2,7 @@ import { convertFile } from "./convert.js";
 import { settings } from "./variables.js";
 import { createHitHTML } from "./actions/createHitHTML.js";
 import { createYvagaHTML } from "./actions/createYvagaHTML.js";
+import { createCydCanaHTML } from "./actions/createCydCanaHTML.js";
 import { sortBy } from "./actions/sortBy.js";
 
 const inputFile = document.getElementById("inputFile");
@@ -25,8 +26,9 @@ const returnAnswer = () => {
 				JSON.parse(textareaSettings.textContent)
 			);
 			break;
+
 		case 1:
-			dataJson = createYvagaHTML(
+			dataJson = createCydCanaHTML(
 				JSON.parse(textareaJson.textContent),
 				JSON.parse(textareaSettings.textContent)
 			);
